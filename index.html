@@ -5,6 +5,7 @@
         <title>paddle web demo - humanseg</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <script src="https://unpkg.com/vconsole/dist/vconsole.min.js"></script>
         <style>
             #loading {
                 position: fixed;
@@ -22,11 +23,16 @@
         </style>
     </head>
     <body>
+        <script>
+        // VConsole 默认会挂载到 `window.VConsole` 上
+        var vConsole = new window.VConsole();
+        </script>
         <img id="humanImg" src="https://m.baidu.com/se/static/img/iphone/logo.png" style="max-width: 100%;"  width="160" height="120"/>
         <img id="snapshotImg"  width="160" height="120" hidden/>
         <canvas id="demo1"></canvas>
         <canvas id="demo2" hidden></canvas>
         <input type="file" id="uploadImg">
+        <button id="start" type="button">开始</button>
         <button id="stop" type="button">停止</button>
         <div id="loading">loading...</div>
         <!-- 打开摄像头 -->

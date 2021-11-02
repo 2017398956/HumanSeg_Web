@@ -78,3 +78,8 @@ document.getElementById('stop').onclick = function (){
     (video.srcObject as MediaStream).getTracks()[0].stop();
     canSeg = false;
 };
+
+document.getElementById('start').onclick = function(){
+    canSeg = true;
+    run();
+};
