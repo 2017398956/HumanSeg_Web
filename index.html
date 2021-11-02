@@ -22,15 +22,16 @@
         </style>
     </head>
     <body>
-        <img id="image" src="https://m.baidu.com/se/static/img/iphone/logo.png" style="max-width: 100%;"  width="48" height="64"/>
-        <img id="temp"/>
+        <img id="humanImg" src="https://m.baidu.com/se/static/img/iphone/logo.png" style="max-width: 100%;"  width="160" height="120"/>
+        <img id="snapshotImg"  width="160" height="120" hidden/>
         <canvas id="demo1"></canvas>
-        <canvas id="demo2"></canvas>
+        <canvas id="demo2" hidden></canvas>
         <input type="file" id="uploadImg">
+        <button id="stop" type="button">停止</button>
         <div id="loading">loading...</div>
         <!-- 打开摄像头 -->
         <center>
-            <video src="" id="video"></video>
+            <video src="" id="video"  width="160" height="120"></video>
         </center>
         
         <script type="text/javascript">
