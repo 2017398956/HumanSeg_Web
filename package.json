@@ -4,7 +4,7 @@
     "description": "",
     "main": "lib/index",
     "scripts": {
-        "dev": "webpack-dev-server --https"
+        "dev": "export NODE_OPTIONS=--openssl-legacy-provider;webpack-dev-server --https"
     },
     "author": "",
     "license": "ISC",
